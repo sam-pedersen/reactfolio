@@ -43,7 +43,7 @@ const INFO = {
 		},
 
 		{
-			title: "Project 2",
+			title: "Film Randomiser",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
@@ -66,6 +66,24 @@ const INFO = {
 			description:
 				"My Most recent showreel! Will update as I create more. A small showcase of films I've had a hand in making come to life!",
 			logo: "https://t3.ftcdn.net/jpg/01/09/40/34/360_F_109403483_qocRmeSFXJ6KlF3yoaDBuI3CZOiNGfCw.jpg",
+			linkText: "View Project",
+			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
+		},
+
+		{
+			title: "Project",
+			description:
+				"My Most recent showreel! Will update as I create more. A small showcase of films I've had a hand in making come to life!",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+			linkText: "View Project",
+			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
+		},
+
+		{
+			title: "Project",
+			description:
+				"My Most recent showreel! Will update as I create more. A small showcase of films I've had a hand in making come to life!",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
 			linkText: "View Project",
 			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
 		},

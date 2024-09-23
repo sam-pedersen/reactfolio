@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
-
 import NavBar from "../components/UI/navBar";
 import Footer from "../components/UI/footer";
 import Logo from "../components/UI/logo";
@@ -8,16 +7,12 @@ import Socials from "../components/about/socials";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-
 import "./styles/about.css";
-
 const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
-
 	const currentSEO = SEO.find((item) => item.page === "about");
-
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -59,6 +54,11 @@ const About = () => {
 											className="about-image"
 										/>
 									</div>
+									<div className="socials-container">
+										<div className="contact-socials">
+											<Socials />
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -71,5 +71,4 @@ const About = () => {
 		</React.Fragment>
 	);
 };
-
 export default About;

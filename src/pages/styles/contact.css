@@ -24,7 +24,6 @@
 	margin-top: 120px;
 }
 
-
 .socials-container {
 	display: flex;
 	flex-direction: column;
@@ -35,4 +34,68 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
+}
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: "flex";
+}
+
+.logo-image {
+	width: 150px; /* Set a fixed width, adjust as needed */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 50%; /* Makes the logo circular */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+	transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.logo-image:hover {
+	transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-group label {
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 1rem;
+}
+
+.submit-button {
+	padding: 0.75rem 1.5rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.submit-button:hover {
+	background-color: #0056b3;
+}
+
+.thank-you-message {
+	text-align: center;
+	font-size: 1.25rem;
+	margin-top: 2rem;
 }
