@@ -31,7 +31,8 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
-		"eject": "react-scripts eject"
+		"eject": "react-scripts eject",
+    "dev": "webpack serve --mode development"
 	},
 	"eslintConfig": {
 		"extends": [
@@ -54,5 +55,10 @@
 	"prettier": {
 		"useTabs": true,
 		"tabWidth": 4
+	},
+	"devDependencies": {
+		"webpack": "^5.94.0",
+		"webpack-cli": "^5.1.4",
+		"webpack-dev-server": "^5.1.0"
 	}
 }

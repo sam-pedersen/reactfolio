@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import NavBar from "../components/common/navBar";
-import Footer from "../components/common/footer";
-import Logo from "../components/common/logo";
+import NavBar from "../components/UI/navBar";
+import Footer from "../components/UI/footer";
+import Logo from "../components/UI/logo";
 import Article from "../components/articles/article";
 
 import INFO from "../data/user";

@@ -10,9 +10,9 @@ import {
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import Logo from "../components/common/logo";
-import Footer from "../components/common/footer";
-import NavBar from "../components/common/navBar";
+import Logo from "../components/UI/logo";
+import Footer from "../components/UI/footer";
+import NavBar from "../components/UI/navBar";
 import Article from "../components/homepage/article";
 import Works from "../components/homepage/works";
 import AllProjects from "../components/projects/allProjects";

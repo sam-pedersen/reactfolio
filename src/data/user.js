@@ -1,9 +1,9 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
+		title: "Sam's Portfolio",
+		name: "Sam ",
+		email: "sampedersenDev@gmail.com",
+		logo: "../Portfolio.png",
 	},
 
 	socials: {
@@ -11,7 +11,6 @@ const INFO = {
 		github: "https://github.com/",
 		linkedin: "https://linkedin.com/",
 		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
 		facebook: "https://facebook.com/",
 	},
 
