@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
@@ -148,16 +147,6 @@ const Homepage = () => {
 							>
 								<FontAwesomeIcon
 									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
 									className="homepage-social-icon"
 								/>
 							</a>

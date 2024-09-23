@@ -34,48 +34,40 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "pawpals",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"Pawpals is a community-driven website designed to connect pet lovers and pet-friendy events, whether you have a pet or not. Browse adorable pets, learn their personalities, explore your local pet-friendly events, or even create your own!",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://pawpals-matai-24.devacademy.nz/",
 		},
 
 		{
 			title: "Project 2",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+
 			linkText: "View Project",
 			link: "https://github.com",
 		},
 
 		{
-			title: "Project 3",
+			title: "Dev Academy Blog",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"My Dev Academy blog chronicles my journey through software development, sharing insights, challenges, and accomplishments as I build real-world projects. It covers topics from coding best practices and problem-solving techniques to personal growth and reflections on the learning process.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://sam-pedersen.github.io/",
 		},
 
 		{
-			title: "Project 4",
+			title: "Showreel",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+				"My Most recent showreel! Will update as I create more. A small showcase of films I've had a hand in making come to life!",
+			logo: "https://t3.ftcdn.net/jpg/01/09/40/34/360_F_109403483_qocRmeSFXJ6KlF3yoaDBuI3CZOiNGfCw.jpg",
 			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
 		},
 	],
 };
