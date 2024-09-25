@@ -2,14 +2,14 @@ const INFO = {
 	main: {
 		title: "Sam's Portfolio",
 		name: "Sam ",
-		email: "sampedersenDev@gmail.com",
+		email: "s.pedwebdev@gmail.com",
 		logo: "../Portfolio.png",
 	},
 
 	socials: {
 		twitter: "https://twitter.com/",
 		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
+		linkedin: "https://www.linkedin.com/in/sam-pedersen-s6011/",
 		instagram: "https://instagram.com/",
 		facebook: "https://facebook.com/",
 	},
