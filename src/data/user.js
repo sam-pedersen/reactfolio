@@ -72,8 +72,7 @@ const INFO = {
 
 		{
 			title: "Project",
-			description:
-				"My Most recent showreel! Will update as I create more. A small showcase of films I've had a hand in making come to life!",
+			description: "My project from dev academy",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
 			linkText: "View Project",
 			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
@@ -81,8 +80,7 @@ const INFO = {
 
 		{
 			title: "Project",
-			description:
-				"My Most recent showreel! Will update as I create more. A small showcase of films I've had a hand in making come to life!",
+			description: "Im working on it ",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
 			linkText: "View Project",
 			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
