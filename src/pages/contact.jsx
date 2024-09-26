@@ -5,32 +5,55 @@ import Footer from "../components/UI/footer";
 import Logo from "../components/UI/logo";
 import INFO from "../data/user";
 import SEO from "../data/seo";
+
 import "./styles/contact.css";
 
 const Contact = () => {
+	// Manage form state
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
 		message: "",
 	});
-
 	const [submitted, setSubmitted] = useState(false);
+	const [error, setError] = useState(null); // To handle any errors
 
+	// Scroll to the top of the page on load
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
 
 	const currentSEO = SEO.find((item) => item.page === "contact");
 
+	// Update form state when the user types
 	const handleChange = (e) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
+		const { name, value } = e.target;
+		setFormData({ ...formData, [name]: value });
 	};
 
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		// You can send formData to your backend or email API here.
-		console.log(formData);
-		setSubmitted(true);
+	// Handle form submission
+	const handleSubmit = async (e) => {
+		e.preventDefault(); // Prevent page reload
+
+		// Send form data to the backend
+		try {
+			const response = await fetch("http://localhost:3001/send-email", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(formData),
+			});
+
+			if (response.ok) {
+				setSubmitted(true);
+				setFormData({ name: "", email: "", message: "" }); // Reset form
+			} else {
+				throw new Error("Something went wrong. Please try again.");
+			}
+		} catch (err) {
+			setError(err.message); // Handle errors
+		}
 	};
 
 	return (
@@ -64,6 +87,7 @@ const Contact = () => {
 							directly.
 						</div>
 
+						{/* If form is submitted, show success message */}
 						{!submitted ? (
 							<form
 								className="contact-form"
@@ -104,6 +128,11 @@ const Contact = () => {
 									></textarea>
 								</div>
 
+								{/* Display error if any */}
+								{error && (
+									<div className="error-message">{error}</div>
+								)}
+
 								<button type="submit" className="submit-button">
 									Send Message
 								</button>
@@ -114,6 +143,14 @@ const Contact = () => {
 								shortly.
 							</div>
 						)}
+					</div>
+
+					<div className="logo-container">
+						<img
+							src="Portfolio.png"
+							alt="logocontact"
+							className="logo-image"
+						/>
 					</div>
 
 					<div className="page-footer">
