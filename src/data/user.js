@@ -72,10 +72,10 @@ const INFO = {
 
 		{
 			title: "Project",
-			description: "My project from dev academy",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-			linkText: "View Project",
-			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
+			description: "My Final thesis Project",
+			logo: "https://download.logo.wine/logo/Massey_University/Massey_University-Logo.wine.png",
+			linkText: "View exhibition",
+			link: "https://exposure2023.massey.ac.nz/students/film-production/samuel-pedersen/",
 		},
 
 		{
