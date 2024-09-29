@@ -8,10 +8,9 @@ const INFO = {
 
 	socials: {
 		twitter: "https://twitter.com/",
-		github: "https://github.com/",
+		github: "https://github.com/sam-pedersen",
 		linkedin: "https://www.linkedin.com/in/sam-pedersen-s6011/",
 		instagram: "https://instagram.com/",
-		facebook: "https://facebook.com/",
 	},
 
 	homepage: {
