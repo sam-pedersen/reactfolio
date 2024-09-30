@@ -79,10 +79,10 @@ const INFO = {
 
 		{
 			title: "Project",
-			description: "Im working on it ",
-			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+			description: "Tic Tac Toe",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
 			linkText: "View Project",
-			link: "https://www.youtube.com/watch?v=YQOPxH8PbK4",
+			link: "https://sam-pedersen.github.io/tic-tac-toe/",
 		},
 	],
 };
