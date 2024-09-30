@@ -1,6 +1,4 @@
-Here's a simple and effective `README.md` file for your portfolio:
 
----
 
 # Sam Pedersen - Portfolio
 
@@ -29,6 +27,3 @@ Feel free to reach out if you have any questions or would like to collaborate on
 - **Email:** [s.pedwebdev@gmail.com](mailto:s.pedwebdev@gmail.com)
 - **LinkedIn:** [https://www.linkedin.com/in/sam-pedersen/](https://www.linkedin.com/in/sam-pedersen/)
 
----
-
-Let me know if you want to add or adjust anything!
