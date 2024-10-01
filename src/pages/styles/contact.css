@@ -99,3 +99,69 @@
 	font-size: 1.25rem;
 	margin-top: 2rem;
 }
+
+/* Add space below the form */
+.contact-container {
+	margin-bottom: 40px; /* Adjust this value to increase/decrease space */
+}
+
+/* Style for the logo container */
+.logo-container {
+	display: flex;
+	justify-content: center; /* Center logo horizontally */
+	margin-top: 20px; /* Space above the logo */
+}
+
+.logo-image {
+	width: 100px; /* Adjust logo size as needed */
+	height: auto; /* Maintain aspect ratio */
+}
+.page-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	animation: fadeIn 1s ease-in-out;
+}
+
+.content-wrapper {
+	width: 100%;
+	max-width: 800px; /* Adjust to your needs */
+	padding: 20px;
+}
+
+.contact-title {
+	text-align: center; /* Center the title */
+	font-size: 2rem;
+	margin-bottom: 20px;
+	animation: slideIn 0.5s forwards; /* Animation for the title */
+}
+
+.contact-subtitle {
+	text-align: center; /* Center the subtitle */
+	font-size: 1.2rem;
+	margin-bottom: 30px;
+	animation: slideIn 0.5s 0.2s forwards; /* Animation for the subtitle */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+	from {
+		transform: translateY(20px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
