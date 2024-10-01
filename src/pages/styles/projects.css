@@ -31,3 +31,43 @@
 		width: calc(100% / 2);
 	}
 }
+/* Funky shake effect for the project title */
+.title-shake {
+	animation: shake 0.5s forwards;
+}
+
+@keyframes shake {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-5px);
+	}
+}
+
+/* Slide-up effect for the subtitle */
+.subtitle-slide-up {
+	opacity: 0;
+	transform: translateY(20px); /* Start from below */
+	animation: slideUp 0.5s forwards;
+	animation-delay: 0.3s; /* Delay to let title animation finish */
+}
+
+@keyframes slideUp {
+	to {
+		opacity: 1;
+		transform: translateY(0); /* End at original position */
+	}
+}
+
+/* Fade-in effect for each project in the list */
+.project-item-fade-in {
+	opacity: 0;
+	animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1; /* End at full opacity */
+	}
+}

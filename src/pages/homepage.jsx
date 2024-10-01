@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
 	faGithub,
-	faStackOverflow,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -23,15 +22,20 @@ const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
 	const [logoSize, setLogoSize] = useState(80);
 	const [oldLogoSize, setOldLogoSize] = useState(80);
+	const [isLogoVisible, setIsLogoVisible] = useState(false);
+	const [isSocialIconsVisible, setIsSocialIconsVisible] = useState(false);
+	const [isImageVisible, setIsImageVisible] = useState(false); // New state for image visibility
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
+		setIsLogoVisible(true);
+		setIsSocialIconsVisible(true);
+		setIsImageVisible(true); // Make image visible on initial load
 	}, []);
 
 	useEffect(() => {
 		const handleScroll = () => {
 			let scroll = Math.round(window.pageYOffset, 2);
-
 			let newLogoSize = 80 - (scroll * 4) / 10;
 
 			if (newLogoSize < oldLogoSize) {
@@ -79,7 +83,10 @@ const Homepage = () => {
 				<NavBar active="home" />
 				<div className="content-wrapper">
 					<div className="homepage-logo-container">
-						<div style={logoStyle}>
+						<div
+							style={logoStyle}
+							className={isLogoVisible ? "slide-in" : ""}
+						>
 							<Logo width={logoSize} link={false} />
 						</div>
 					</div>
@@ -87,11 +94,11 @@ const Homepage = () => {
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
+								<div className="title homepage-title fade-in">
 									{INFO.homepage.title}
 								</div>
 
-								<div className="subtitle homepage-subtitle">
+								<div className="subtitle homepage-subtitle fade-in">
 									{INFO.homepage.description}
 								</div>
 							</div>
@@ -102,7 +109,11 @@ const Homepage = () => {
 										<img
 											src="homepage.jpg"
 											alt="about"
-											className="homepage-image"
+											className={`homepage-image ${
+												isImageVisible
+													? "image-fade-in-slide-up"
+													: ""
+											}`} // Apply animation class
 										/>
 									</div>
 								</div>
@@ -110,46 +121,29 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.twitter}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faTwitter}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.stackoverflow}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
-							</a>
+							{isSocialIconsVisible &&
+								Object.entries(INFO.socials).map(
+									([key, url]) => (
+										<a
+											href={url}
+											target="_blank"
+											rel="noreferrer"
+											className="social-icon-zoom"
+											key={key}
+										>
+											<FontAwesomeIcon
+												icon={
+													key === "twitter"
+														? faTwitter
+														: key === "github"
+														? faGithub
+														: faInstagram
+												}
+												className="homepage-social-icon"
+											/>
+										</a>
+									)
+								)}
 						</div>
 
 						<div className="homepage-projects">

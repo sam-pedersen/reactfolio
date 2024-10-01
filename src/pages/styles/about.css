@@ -114,3 +114,57 @@
 		width: 80%;
 	}
 }
+
+/* Funky scale and rotate effect for the logo */
+.logo-funky-animation {
+	animation: scaleRotate 0.8s infinite alternate;
+}
+
+@keyframes scaleRotate {
+	0% {
+		transform: scale(1) rotate(0deg);
+	}
+	100% {
+		transform: scale(1.1) rotate(10deg);
+	}
+}
+
+/* Funky bounce effect for the title */
+.title-bounce {
+	animation: bounce 0.8s forwards;
+}
+
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-10px);
+	}
+}
+
+/* Funky slide-in effect for the image */
+.image-slide-in {
+	opacity: 0;
+	transform: translateX(-20px); /* Start from the left */
+	animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+	to {
+		opacity: 1;
+		transform: translateX(0); /* End at original position */
+	}
+}
+
+/* Socials fade-in effect */
+.socials-fade-in {
+	opacity: 0;
+	animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1; /* End at full opacity */
+	}
+}

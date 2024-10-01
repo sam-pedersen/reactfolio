@@ -38,12 +38,18 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">
+						<div className={`title projects-title title-shake`}>
+							{" "}
+							{/* Apply shake animation */}
 							Things I’ve made trying to put my dent in the
 							universe.
 						</div>
 
-						<div className="subtitle projects-subtitle">
+						<div
+							className={`subtitle projects-subtitle subtitle-slide-up`}
+						>
+							{" "}
+							{/* Apply slide-up animation */}
 							I've worked on a variety of projects over the years
 							and I'm proud of the progress I've made. Many of
 							these projects are open-source and available for
@@ -57,7 +63,8 @@ const Projects = () => {
 						</div>
 
 						<div className="projects-list">
-							<AllProjects />
+							<AllProjects />{" "}
+							{/* We'll apply the fade-in effect for items here */}
 						</div>
 					</div>
 					<div className="page-footer">

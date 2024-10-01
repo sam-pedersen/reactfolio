@@ -8,11 +8,14 @@ import Socials from "../components/about/socials";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import "./styles/about.css";
+
 const About = () => {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 	}, []);
+
 	const currentSEO = SEO.find((item) => item.page === "about");
+
 	return (
 		<React.Fragment>
 			<Helmet>
@@ -28,7 +31,9 @@ const About = () => {
 				<NavBar active="about" />
 				<div className="content-wrapper">
 					<div className="about-logo-container">
-						<div className="about-logo">
+						<div className="about-logo logo-funky-animation">
+							{" "}
+							{/* Apply logo animation */}
 							<Logo width={46} />
 						</div>
 					</div>
@@ -36,7 +41,9 @@ const About = () => {
 					<div className="about-container">
 						<div className="about-main">
 							<div className="about-right-side">
-								<div className="title about-title">
+								<div className="title about-title title-bounce">
+									{" "}
+									{/* Apply title bounce animation */}
 									{INFO.about.title}
 								</div>
 
@@ -51,10 +58,12 @@ const About = () => {
 										<img
 											src="about.jpg"
 											alt="about"
-											className="about-image"
+											className="about-image image-slide-in" // Apply image slide-in animation
 										/>
 									</div>
-									<div className="socials-container">
+									<div className="socials-container socials-fade-in">
+										{" "}
+										{/* Apply socials fade-in animation */}
 										<div className="contact-socials">
 											<Socials />
 										</div>
@@ -71,4 +80,5 @@ const About = () => {
 		</React.Fragment>
 	);
 };
+
 export default About;

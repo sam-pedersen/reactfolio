@@ -148,3 +148,56 @@
 		margin-right: -25px;
 	}
 }
+
+/* Fade-in effect for elements */
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+	to {
+		opacity: 1;
+	}
+}
+
+/* Slide-in effect for the logo */
+.slide-in {
+	transform: translateY(-20px);
+	opacity: 0;
+	animation: slideIn 1.5s forwards;
+}
+
+@keyframes slideIn {
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+/* Zoom-in effect for social icons */
+.social-icon-zoom {
+	transform: scale(0.7);
+	opacity: 0;
+	animation: zoomIn 1.5s forwards;
+}
+
+@keyframes zoomIn {
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+/* Image fade-in and slide-up effect */
+.image-fade-in-slide-up {
+	opacity: 0;
+	transform: translateY(20px); /* Start from below */
+	animation: fadeInSlideUp 1.5s forwards; /* Animation for the image */
+}
+
+@keyframes fadeInSlideUp {
+	to {
+		opacity: 1;
+		transform: translateY(0); /* End at original position */
+	}
+}
