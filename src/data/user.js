@@ -44,7 +44,7 @@ const INFO = {
 		{
 			title: "Film Randomiser",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Using the TMDB API I created a small film randomiser based on some wacky prompts.",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
 
 			linkText: "View Project",
@@ -70,16 +70,18 @@ const INFO = {
 		},
 
 		{
-			title: "Project",
-			description: "My Final thesis Project",
+			title: "My Final thesis Project",
+			description:
+				"My final thesis project exhibition page, check out some behind the scenes images and learn more about what inspired me",
 			logo: "https://download.logo.wine/logo/Massey_University/Massey_University-Logo.wine.png",
 			linkText: "View exhibition",
 			link: "https://exposure2023.massey.ac.nz/students/film-production/samuel-pedersen/",
 		},
 
 		{
-			title: "Project",
-			description: "Tic Tac Toe",
+			title: "Tic Tac Toe",
+			description:
+				"This is a small game of Tic Tac Toe I made as part of dev academy journey, was lots of fun to make!",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
 			linkText: "View Project",
 			link: "https://sam-pedersen.github.io/tic-tac-toe/",
