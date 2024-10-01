@@ -32,8 +32,6 @@ const About = () => {
 				<div className="content-wrapper">
 					<div className="about-logo-container">
 						<div className="about-logo logo-funky-animation">
-							{" "}
-							{/* Apply logo animation */}
 							<Logo width={46} />
 						</div>
 					</div>
@@ -42,13 +40,22 @@ const About = () => {
 						<div className="about-main">
 							<div className="about-right-side">
 								<div className="title about-title title-bounce">
-									{" "}
-									{/* Apply title bounce animation */}
 									{INFO.about.title}
 								</div>
 
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
+								</div>
+
+								{/* Add the "Download My CV" button here */}
+								<div className="download-cv-container">
+									<a
+										href="/Sam-Pedersen-Resume.pdf"
+										className="download-cv-button"
+										download="Sam_Pedersen_CV.pdf"
+									>
+										Download My CV
+									</a>
 								</div>
 							</div>
 
@@ -58,12 +65,10 @@ const About = () => {
 										<img
 											src="about.jpg"
 											alt="about"
-											className="about-image image-slide-in" // Apply image slide-in animation
+											className="about-image image-slide-in"
 										/>
 									</div>
 									<div className="socials-container socials-fade-in">
-										{" "}
-										{/* Apply socials fade-in animation */}
 										<div className="contact-socials">
 											<Socials />
 										</div>
@@ -72,6 +77,7 @@ const About = () => {
 							</div>
 						</div>
 					</div>
+
 					<div className="page-footer">
 						<Footer />
 					</div>
