@@ -50,7 +50,7 @@ const About = () => {
 								{/* Add the "Download My CV" button here */}
 								<div className="download-cv-container">
 									<a
-										href="/Sam-Pedersen-Resume.pdf"
+										href="/sampedersencv.pdf"
 										className="download-cv-button"
 										download="Sam_Pedersen_CV.pdf"
 									>
