@@ -42,6 +42,15 @@ const INFO = {
 		},
 
 		{
+			title: "Pokedex query-em!",
+			description:
+				"I created a pokedex using the pokemon API to gather all the data on your favorite mon's! still working on ironing out the kinks but checkout my repo and clone it for yourself!",
+			logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcr9ErjixrOB4brfXICewuiMmzsvkUJ4jlHg&s",
+			linkText: "View Project",
+			link: "https://github.com/sam-pedersen/query-em",
+		},
+
+		{
 			title: "Film Randomiser",
 			description:
 				"Using the TMDB API I created a small film randomiser based on some wacky prompts.",
