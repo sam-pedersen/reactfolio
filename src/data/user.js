@@ -51,6 +51,14 @@ const INFO = {
 		},
 
 		{
+			title: "Dev Academy Blog",
+			description:
+				"My Dev Academy blog chronicles my journey through software development, sharing insights, challenges, and accomplishments as I build real-world projects. It covers topics from coding best practices and problem-solving techniques to personal growth and reflections on the learning process.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+			linkText: "View Project",
+			link: "https://sam-pedersen.github.io/",
+		},
+		{
 			title: "Film Randomiser",
 			description:
 				"Using the TMDB API I created a small film randomiser based on some wacky prompts.",
@@ -59,16 +67,6 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://github.com",
 		},
-
-		{
-			title: "Dev Academy Blog",
-			description:
-				"My Dev Academy blog chronicles my journey through software development, sharing insights, challenges, and accomplishments as I build real-world projects. It covers topics from coding best practices and problem-solving techniques to personal growth and reflections on the learning process.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://sam-pedersen.github.io/",
-		},
-
 		{
 			title: "Showreel",
 			description:

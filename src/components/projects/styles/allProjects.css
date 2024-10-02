@@ -20,3 +20,32 @@
 		width: calc(100% / 2);
 	}
 }
+.more-projects-button {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 15px 30px;
+	background-color: transparent;
+	color: #000000;
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	border: 2px solid #fff;
+	border-radius: 5px;
+	text-align: center;
+	transition: background-color 0.3s, transform 0.3s;
+	background-image: url("/public/Portfolio.png");
+	background-size: cover;
+	background-position: center;
+	height: 60px;
+	width: 220px;
+}
+
+.more-projects-button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	transform: scale(1.05);
+}
+
+.more-projects-button:focus {
+	outline: none;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

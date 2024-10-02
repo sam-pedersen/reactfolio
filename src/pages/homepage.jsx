@@ -11,7 +11,7 @@ import {
 import Logo from "../components/UI/logo";
 import Footer from "../components/UI/footer";
 import NavBar from "../components/UI/navBar";
-import AllProjects from "../components/projects/allProjects";
+import HomepageProject from "../components/projects/HomepageProject";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -113,7 +113,7 @@ const Homepage = () => {
 												isImageVisible
 													? "image-fade-in-slide-up"
 													: ""
-											}`} // Apply animation class
+											}`}
 										/>
 									</div>
 								</div>
@@ -147,7 +147,7 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-projects">
-							<AllProjects />
+							<HomepageProject />
 						</div>
 					</div>
 
