@@ -93,6 +93,14 @@ const INFO = {
 			linkText: "View Project",
 			link: "https://sam-pedersen.github.io/tic-tac-toe/",
 		},
+		{
+			title: "State guessing game",
+			description:
+				"This is a small game that gets you to guess the american state based on their outline.  I made this as part of dev academy journey, was lots of fun to make!",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
+			linkText: "View Project",
+			link: "https://sam-pedersen.github.io/Personal-Project/",
+		},
 	],
 };
 
